@@ -9,12 +9,18 @@
   pip install git+https://github.com/dttvn0010/livekit-vits.git  
 ```
 
-2. Download model files:  
+2. Install voice server from https://github.com/dttvn0010/vits-voice-server  
+
+3. Update voice server url in file `agent.py`:  
 ```
-  python agent.py download-files  
+    session = AgentSession(
+        ...
+        tts=TTS(lang="en", base_url="<voice_server_url>"),
+        ...
+    )
+
 ```
 
-3. Download TTS models from https://drive.google.com/file/d/1YYtDaqmd6oipHZ45GtGuXwHWBEMHl6pK/view?usp=drive_link and extract to folder "tts-models"  
 
 4. Start agent:  
 ```

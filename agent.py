@@ -20,7 +20,7 @@ async def entrypoint(ctx: agents.JobContext) -> None:
     session = AgentSession(
         stt=openai.STT(),
         llm=openai.LLM(model="gpt-4o-mini"),
-        tts=TTS(lang="en-us", model_path="tts-models/en/en.onnx"),
+        tts=TTS(lang="en", base_url="http://127.0.0.1:5005"),
         vad=silero.VAD.load(),
         turn_detection=MultilingualModel(),
     )
