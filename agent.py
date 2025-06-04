@@ -8,7 +8,6 @@ from livekit.plugins import (
     silero,
 )
 from livekit.plugins.turn_detector.multilingual import MultilingualModel
-from livekit_vits import TTS
 
 load_dotenv(dotenv_path=".env.local")
 
@@ -20,7 +19,7 @@ async def entrypoint(ctx: agents.JobContext) -> None:
     session = AgentSession(
         stt=openai.STT(),
         llm=openai.LLM(model="gpt-4o-mini"),
-        tts=TTS(lang="en", base_url="http://127.0.0.1:5005"),
+        tts=openai.TTS(base_url="http://127.0.0.1:5005/v1", model="en-mono", voice="female", response_format="wav"),
         vad=silero.VAD.load(),
         turn_detection=MultilingualModel(),
     )

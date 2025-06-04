@@ -9,20 +9,10 @@
   pip install git+https://github.com/dttvn0010/livekit-vits.git  
 ```
 
-2. Install voice server from https://github.com/dttvn0010/vits-voice-server  
-
-3. Update voice server url in file `agent.py`:  
-```
-    session = AgentSession(
-        ...
-        tts=TTS(lang="en", base_url="<voice_server_url>"),
-        ...
-    )
-
-```
+2. Download model files: python agent.py download-files 
 
 
-4. Start agent:  
+3. Start agent:  
 ```
    python agent dev
 ```
