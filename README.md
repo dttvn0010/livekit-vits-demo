@@ -8,7 +8,10 @@
 
 ```
 
-2. Download model files: python agent.py download-files 
+2. Download model files:
+   ```
+   python agent.py download-files
+   ```
 
 
 3. Start agent:  
