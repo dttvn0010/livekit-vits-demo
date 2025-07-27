@@ -19,7 +19,10 @@
   LIVEKIT_API_KEY=<your_livekit_api_key>
   LIVEKIT_API_SECRET=<your_livekit_api_secret>
 ```
-
+For windows, you may need to replace the first line with:
+```
+  set OPENAI_API_KEY=<your_openai_key>
+```
 See: https://docs.livekit.io/agents/start/voice-ai/ for more details.
 
 4. Download model files:  
