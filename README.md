@@ -13,19 +13,11 @@
    ```
 
 3. Create file ".env.local" with the following content:
-For Linux/MacOS:
 ```
-  export OPENAI_API_KEY=<your_openai_key>
-  export LIVEKIT_URL=wss://<your_livekit_project_id>.livekit.cloud
-  export LIVEKIT_API_KEY=<your_livekit_api_key>
-  export LIVEKIT_API_SECRET=<your_livekit_api_secret>
-```
-For Windows:
-```
-  set OPENAI_API_KEY=<your_openai_key>
-  set LIVEKIT_URL=wss://<your_livekit_project_id>.livekit.cloud
-  set LIVEKIT_API_KEY=<your_livekit_api_key>
-  set LIVEKIT_API_SECRET=<your_livekit_api_secret>
+  OPENAI_API_KEY=<your_openai_key>
+  LIVEKIT_URL=wss://<your_livekit_project_id>.livekit.cloud
+  LIVEKIT_API_KEY=<your_livekit_api_key>
+  LIVEKIT_API_SECRET=<your_livekit_api_secret>
 ```
 
 See: https://docs.livekit.io/agents/start/voice-ai/ for more details.
