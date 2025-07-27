@@ -6,7 +6,6 @@
     "livekit-plugins-noise-cancellation~=0.2" \
     "python-dotenv"
 
-  pip install git+https://github.com/dttvn0010/livekit-vits.git  
 ```
 
 2. Download model files: python agent.py download-files 
