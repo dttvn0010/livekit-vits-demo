@@ -19,7 +19,7 @@
   LIVEKIT_API_KEY=<your_livekit_api_key>
   LIVEKIT_API_SECRET=<your_livekit_api_secret>
 ```
-For windows, you may need to replace the first line with:
+For Windows, you may need to set OPENAI_API_KEY in System Environemnt, or from the terminal directly:
 ```
   set OPENAI_API_KEY=<your_openai_key>
 ```
